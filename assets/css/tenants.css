@@ -60,6 +60,10 @@
     max-width: calc(33.3333% - 14px);
     width: 100%;
 }
+.shopping-center-photo img{
+    max-width: 264px;
+    width: 100%;
+}
 .shopping-center-box strong{
     color: #F15921;
     font-weight: 700;
