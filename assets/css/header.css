@@ -9,7 +9,9 @@
 .head-box{
     position: relative;
 }
-
+.logo{
+    width: 103px;
+}
 .header-main{
     gap: 40px;
     border-radius: 16px;
