@@ -1,0 +1,86 @@
+
+
+.shops-show-wrap .promotions-box{
+    border-radius: 20px;
+    height: 420px;
+    width: calc(33.333333% - 14px);
+}
+
+.shops-show-wrap .promotions-title {
+    border-radius: 17px;
+}
+
+.sort-stock-box .floor-box-drop{
+    width: 224px;
+}
+
+.sort-stock-box .check-floor label .checkmark:after {
+    border: solid #F15921;
+    border-width: 0 2px 2px 0;
+    top: 2px;
+    width: 6px;
+    height: 13px;
+}
+.sort-stock-item .check-floor label .checkmark:after {
+    border: solid #F15921;
+    border-width: 0 2px 2px 0;
+    top: 2px;
+    width: 6px;
+    height: 13px;
+}
+
+.sort-stock-box  .checkmark {
+    border: unset;
+    background: unset;
+}
+.sort-stock-item  .checkmark {
+    border: unset;
+    background: unset;
+}
+.sort-stock-box .check-floor label input:checked ~ .checkmark {
+    background: unset;
+
+}
+.sort-stock-item .check-floor label input:checked ~ .checkmark {
+    background: unset;
+
+}
+.sort-stock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+.sort-stock-item .check-floor{
+    display: block;
+    max-width: 312px;
+    width: 100%;
+}
+
+
+
+.filter-mobile-stock {
+    min-height: 315px;
+}
+@media (max-width: 1199px) {
+    .sort-stock-box .floor-box-drop {
+        left: auto;
+        right: 0;
+    }
+}
+
+
+@media (max-width: 767px){
+    .shops-show-wrap .promotions-box {
+        width: calc(50% - 14px);
+    }
+}
+@media (max-width: 575px){
+    .shops-show-wrap .promotions-box {
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

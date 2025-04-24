@@ -1,0 +1,285 @@
+.gloria-jeans{
+    gap: 40px;
+}
+.gloria-jeans-info{
+    max-width: 300px;
+    width: 100%;
+}
+.gloria-jeans-floor{
+    margin-top: 20px;
+    gap: 20px;
+}
+.gloria-jeans-floor span{
+    gap: 10px;
+    border-radius: 100px;
+    padding: 8px 20px;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.gloria-jeans-data{
+    margin-top: 40px;
+    gap: 17px;
+}
+.gloria-jeans-floor a{
+    color: #F15921;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.gloria-jeans-clock{
+    gap: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1C1C1C;
+    font-family: 'Montserrat';
+
+}
+.gloria-jeans-clock i{
+    width: 24px;
+    height: 24px;
+}
+
+.social-box{
+    margin-top: 3px;
+    gap: 12px;
+}
+.href-soc{
+    transition: 0.3s;
+    max-width: 44px;
+    width: 100%;
+    height: 44px;
+    border-radius: 50%;
+}
+.href-soc i{
+    width: 44px;
+    height: 44px;
+    transition: 0.3s;
+}
+.href-soc:hover i{
+    background-color: #F15921;
+}
+.btn-line{
+    border: 1px solid #1C1C1C;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 12px 24px;
+    transition: 0.3s;
+    width: max-content;
+    white-space: nowrap;
+    background: unset;
+    color: #1C1C1C;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+}
+.btn-line:hover{
+    background: #1C1C1C;
+    color: #FFFFFF;
+}
+.gloria-jeans-cnt{
+    max-width: 793px;
+    width: 100%;
+}
+.gloria-jeans-photo{
+    position: relative;
+}
+.gloria-jeans-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 28px;
+    gap: 12px;
+}
+.gloria-jeans-name span{
+    display: flex;
+    color: #1C1C1C;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    background: #FFFFFF;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+.gloria-jeans-logo{
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 68px;
+}
+.gloria-jeans-logo img{
+    border-radius: 16px;
+}
+
+.gloria-jeans-text{
+    gap: 32px;
+    margin-top: 32px;
+
+}
+.gloria-jeans-info .gloria-jeans-text{
+    display: none;
+}
+
+
+.gallery-cnt h2{
+    text-align: left;
+}
+.gallery-main{
+    margin-top: 40px;
+}
+.gallery-photo{
+    display: flex;
+    position: relative;
+}
+.gallery-photo:after{
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    background-image: url("../img/icon-zoom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.gallery-photo img{
+    width: 100%;
+    border-radius: 30px;
+}
+.gallery-arrow-btn{
+    margin-top: 32px;
+    gap: 20px;
+}
+
+.gallery-arrow-btn .swiper-button-prev:hover{
+    background: #F15921;
+}
+.gallery-arrow-btn .swiper-button-prev:hover:before{
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+.gallery-arrow-btn .swiper-button-next:hover{
+    background: #F15921;
+}
+.gallery-arrow-btn .swiper-button-next:hover:before{
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+
+
+
+
+.current-promo-cnt{
+    gap: 77px;
+}
+
+.current-promo-cnt h2{
+    text-align: left;
+    max-width: 330px;
+    width: 100%;
+}
+.current-promo-wrap{
+    max-width: 793px;
+    width: 100%;
+    gap: 20px;
+}
+.current-promo-wrap .promotions-box{
+    width: calc(50% - 14px);
+}
+
+
+.current-promo-rel{
+    display: none;
+}
+
+
+
+@media (max-width: 1020px){
+    .gloria-jeans {
+        gap: 32px;
+        flex-direction: column-reverse;
+    }
+    .gloria-jeans-text{
+        display: none;
+    }
+    .gloria-jeans-info .gloria-jeans-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .gloria-jeans-info {
+        max-width: 100%;
+    }
+    .gloria-jeans-cnt{
+        width: 100%;
+    }
+    .gallery-arrow-btn {
+        justify-content: center;
+    }
+    .current-promo-cnt {
+        gap: 20px;
+    }
+    .current-promo-cnt {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .current-promo-wrap{
+        display: none;
+    }
+    .current-promo-rel {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .current-promo-rel  .promotions-arrow {
+        justify-content: center;
+    }
+    .gloria-jeans-photo {
+        flex-direction: column;
+    }
+    .gloria-jeans-name {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        gap: 8px;
+        margin-top: 12px;
+        flex-wrap: wrap;
+    }
+    .gloria-jeans-logo {
+        top: 16px;
+        left: 16px;
+        width: 60px;
+    }
+    .gloria-jeans-logo img {
+        border-radius: 10px;
+    }
+    .gallery-main {
+        margin-top: 32px;
+    }
+    .gloria-jeans-text p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .gloria-jeans-text {
+        gap: 24px;
+    }
+    .gloria-jeans-floor span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .gloria-jeans-name span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}

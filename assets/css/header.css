@@ -1,0 +1,342 @@
+
+.header-fix{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.head-box{
+    position: relative;
+}
+
+.header-main{
+    gap: 40px;
+    border-radius: 16px;
+    padding: 20px 32px 20px 28px;
+    background: #ffffff;
+}
+.head-clack{
+    gap: 12px;
+    white-space: nowrap;
+
+}
+.head-clack p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #4A4A4A;
+}
+.head-search-form{
+    position: absolute;
+    left: 0;
+    top: -60px;
+    transition: 0.5s;
+    width: 100%;
+
+}
+
+.search-form-act{
+    top: 0;
+
+}
+.head-search-inp{
+    position: relative;
+}
+.head-search-inp label{
+    display: flex;
+    width: 100%;
+}
+.head-search-inp input{
+    width: 100%;
+    padding: 0 40px 0 40px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1C1C1C;
+    border: 2px solid #0000000D;
+}
+.btn-search{
+    position: absolute;
+    left: 15px;
+    background: unset;
+}
+.close-search{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15px;
+    height: 15px;
+}
+.close-search span{
+    width: 15px;
+    height: 2px;
+    background: #1C1C1C;
+    display: block;
+    position: relative;
+}
+.close-search span:nth-child(1){
+    transform: rotate(45deg);
+    top: 6px;
+}
+.close-search span:nth-child(2){
+    transform: rotate(-45deg);
+    top: 4px;
+
+}
+.header-cnt{
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.open-search, .href-map, .href-loc{
+    gap: 8px;
+
+    border: 2px solid #0000000D;
+    background: #FFFFFF;
+    width: max-content;
+    border-radius: 25px;
+    padding: 10px 16px 10px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+
+}
+.header-cnt span, .head-call span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1C1C1C;
+    white-space: nowrap;
+}
+.head-call{
+    gap: 12px;
+    color: #4A4A4A;
+
+}
+.head-call span{
+    font-family: 'Montserrat';
+
+}
+.open-menu{
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.open-menu small{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1C1C1C;
+}
+.open-menu-line{
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    gap: 4px;
+}
+.open-menu-line span{
+    width: 12px;
+    height: 2px;
+    display: block;
+    background: #1C1C1C;
+}
+
+.close-menu span {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.close-menu span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 3px;
+    position: relative;
+}
+.close-menu span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -3px;
+}
+.close-menu span:nth-child(3){
+    display: none;
+}
+
+.body_fix {
+    overflow: hidden;
+}
+.body_fix:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transition: 0.3s;
+    backdrop-filter: blur(20px);
+    background: #00000099;
+
+}
+
+.menu-content-pad{
+    padding: 32px;
+
+}
+
+
+
+
+.menu-content {
+    position: absolute;
+    z-index: 99999;
+    top: 95px;
+    right: 0;
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    background: #ffffff;
+    width: 458px;
+    border-radius: 20px;
+}
+
+.transition-menu {
+    height: 220px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.menu-content-href ul{
+    gap: 20px;
+}
+.menu-content-href a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1C1C1C;
+    text-align: left;
+    transition: 0.3s;
+}
+.menu-content-href a:hover{
+    color: #F15921;
+}
+.menu-content-mobile{
+    display: none;
+}
+
+.menu-content .head-clack{
+    display: none;
+}
+.menu-mob-cnt{
+    display: none;
+}
+
+@media (max-width: 1199px){
+    .header-main {
+        gap: 15px;
+        padding: 15px 20px 15px 16px;
+    }
+    .header-cnt {
+        gap: 10px;
+    }
+    .open-search, .href-map, .href-loc {
+        padding: 10px 12px 10px 9px;
+    }
+
+}
+@media (max-width: 1020px){
+
+    .header-fix{
+        top: 12px;
+    }
+    .header-cnt{
+        display: none;
+    }
+    .header-main .head-clack{
+        display: none;
+    }
+    .head-call {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .menu-content-pad {
+        padding: 16px;
+    }
+    .menu-content {
+        top: 42px;
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+    }
+    .menu-content .head-clack {
+        display: flex;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    .menu-content-href{
+        margin-top: 30px;
+        gap: 20px;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .transition-menu {
+        height: 500px;
+    }
+    .menu-content-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #F15921;
+        padding: 8px;
+        border-radius: 100px;
+        gap: 12px;
+        margin: 12px 0;
+    }
+    .menu-mob-cnt{
+        display: block;
+        margin-top: 80px;
+    }
+   .href-map, .href-loc {
+        width: 100%;
+        max-width: 44px;
+        height: 44px;
+        padding: 5px;
+       border: 2px solid #0000000D;
+       background: #ffffff;
+       border-radius: 50%;
+    }
+   .search-mob{
+       width: 100%;
+       display: block;
+   }
+    .open-menu small{
+        display: none;
+    }
+    .open-menu-line {
+        width: 26px;
+        height: 26px;
+    }
+    .open-menu-line span {
+        width: 25px;
+    }
+    .head-call i{
+        display: none;
+    }
+    .header-cnt span, .head-call span {
+        font-size: 14px;
+    }
+    .logo{
+        width: 84px;
+    }
+
+}

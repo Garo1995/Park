@@ -1,0 +1,517 @@
+.tenants-page:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -136px;
+    background-image: url('../img/tenants-line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 973px;
+    width: 100%;
+    height: 1256px;
+}
+
+
+.tenants-cnt{
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+.tenants-cnt-info{
+    max-width: 590px;
+    width: 100%;
+    gap: 40px;
+}
+.tenants-cnt-info h1{
+    text-align: left;
+}
+.tenants-photo{
+    max-width: 590px;
+    width: 100%;
+}
+
+
+
+
+.shopping-center{
+    gap: 20px;
+}
+.shopping-center-title{
+    max-width: calc(33.3333% - 14px);
+    width: 100%;
+}
+.shopping-center-title h2{
+    text-align: left;
+}
+.shopping-center-title p{
+    margin-top: 20px;
+}
+
+.shopping-center-box{
+    background: #FFFFFF;
+    max-width: calc(33.3333% - 14px);
+
+    height: 264px;
+    border-radius: 30px;
+    padding: 28px;
+
+}
+.shopping-center-photo{
+    max-width: calc(33.3333% - 14px);
+    width: 100%;
+}
+.shopping-center-box strong{
+    color: #F15921;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 56px;
+    font-family: 'Montserrat';
+
+
+}
+.shopping-center-box span{
+    color: #1C1C1C;
+    display: block;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.shopping-center-box p{
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 72px;
+}
+.advantages-rel{
+    display: none;
+}
+
+.advantages-cnt{
+    max-width: 792px;
+    width: 100%;
+    gap: 20px;
+}
+.advantages-box{
+    background: #FFFFFF;
+    width: calc(50% - 14px);
+    border-radius: 30px;
+    padding: 28px;
+
+}
+.advantages-box h3{
+    margin-top: 72px;
+}
+.advantages-box p{
+    margin-top: 16px;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+
+.rental-advertising{
+    gap: 20px;
+}
+.rental-advertising-info{
+    max-width: 450px;
+    width: 100%;
+}
+.rental-advertising-info h2{
+    text-align: left;
+}
+.rental-advertising-info p{
+    margin-top: 20px;
+}
+.rental-advertising-info .btn-black{
+    margin-top: 40px;
+}
+
+.rental-advertising-cnt{
+    background: #FFFFFF;
+    max-width: 590px;
+    width: 100%;
+    gap: 24px;
+    border-radius: 30px;
+    padding: 28px;
+
+}
+.rental-advertising-name p{
+    margin-top: 12px;
+}
+.rental-advertising-cnt img{
+    max-width: 80px;
+    width: 100%;
+}
+.rental-advertising-text{
+    margin-top: 16px;
+    gap: 4px;
+}
+.rental-advertising-text p{
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.rental-advertising-text span{
+    color: #1C1C1C;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Montserrat';
+
+}
+
+
+
+.contact-us-main{
+    padding: 0 20px;
+}
+.contact-us-fon{
+    background: #FFFFFF;
+    border-radius: 30px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.contact-us-cnt{
+    gap: 100px;
+    padding-right: 50px;
+}
+.contact-us-photo{
+    max-width: 690px;
+    width: 100%;
+}
+.contact-us-box{
+    max-width: 510px;
+    width: 100%;
+}
+.contact-us-box h2{
+    text-align: left;
+}
+.contact-us-box p{
+    margin-top: 20px;
+}
+.contact-us-form{
+    margin-top: 32px;
+}
+.contact-inp{
+    width: 100%;
+    margin-top: 8px;
+}
+.contact-inp label{
+    width: 100%;
+    display: flex;
+}
+.contact-inp input, .contact-inp textarea{
+    background: #0000000D;
+    width: 100%;
+    height: 54px;
+    border-radius: 100px;
+    padding: 16px 24px;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border: unset;
+    font-family: 'Montserrat';
+
+
+}
+.contact-inp input::placeholder{
+    color: #4A4A4A;
+    font-family: 'Montserrat';
+
+
+}
+.contact-inp textarea::placeholder{
+    color: #4A4A4A;
+    font-family: 'Montserrat';
+
+
+}
+
+.contact-inp textarea{
+    border-radius: 24px;
+    height: 120px;
+}
+.contact-us-form .btn{
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+}
+.contact-inp-fl{
+    gap: 8px;
+}
+.contact-us-form small{
+    text-align: center;
+    display: block;
+    margin-top: 12px;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 20px;
+}
+
+.rental-btn-mob{
+    display: none;
+}
+
+
+.contact-page{
+    margin-top: 20px;
+}
+.contact-page-cnt{
+    gap: 20px;
+}
+.feedback-box{
+    background: #1C1C1C;
+    max-width: 590px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 40px;
+}
+.feedback-box h2{
+    color: #FFFFFF;
+}
+.feedback-box p{
+    color: #FFFFFF;
+}
+.contact-page-box{
+    max-width: 590px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 40px;
+}
+.contact-page-box{
+    margin-top: 0;
+}
+
+
+
+@media (max-width: 1299px){
+    .contact-us-cnt {
+        gap: 40px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 1199px){
+    .tenants-cnt-info {
+        gap: 20px;
+    }
+    .tenants-cnt-info   p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .tenants-page:after {
+        max-width: 799px;
+        height: 1025px;
+    }
+    .shopping-center-box strong {
+        font-size: 40px;
+        line-height: 43px;
+
+    }
+    .advantages-box {
+        padding: 24px;
+    }
+    .rental-advertising-cnt {
+        padding: 24px;
+    }
+    .contact-us-box p {
+        margin-top: 12px;
+    }
+    .contact-us-cnt{
+        align-items: flex-start;
+    }
+    .contact-us-box {
+        padding: 24px 0;
+    }
+    .rental-advertising-cnt {
+        max-width: 500px;
+    }
+}
+@media (max-width: 991px){
+    .tenants-page:after{
+        display: none;
+    }
+    .tenants-cnt {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-top: 70px;
+        position: relative;
+    }
+    .tenants-cnt-info h1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .tenants-photo{
+        max-width: 690px;
+        width: 100%;
+    }
+    .tenants-photo img{
+        border-radius: 20px;
+        width: 100%;
+    }
+    .tenants-cnt-info {
+        max-width: 100%;
+    }
+    .tenants-cnt-info .btn{
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .shopping-center-box {
+        max-width: calc(50% - 14px);
+         height: auto;
+        border-radius: 20px;
+        padding: 24px;
+    }
+    .shopping-center-title {
+        max-width: calc(50% - 14px);
+    }
+    .shopping-center-photo {
+        max-width: calc(50% - 14px);
+    }
+    .rental-advertising {
+        gap: 32px;
+        flex-direction: column;
+    }
+    .rental-advertising-info .btn-black{
+        display: none;
+    }
+    .rental-advertising-info {
+        max-width: 650px;
+    }
+
+
+
+    .rental-advertising-cnt {
+        max-width: 790px;
+        border-radius: 20px;
+    }
+    .rental-btn-mob{
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        width: 100%;
+        margin: 32px auto 0;
+    }
+    .contact-us-cnt {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+
+    }
+    .contact-us-fon {
+        border-radius: 20px;
+    }
+    .contact-us-photo img{
+        border-radius: 20px;
+    }
+    .contact-us-box {
+        padding: 0;
+    }
+    .contact-page-cnt {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .contact-page {
+        margin-top: 32px;
+    }
+    .feedback-box {
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 24px;
+        height: 218px;
+    }
+    .contact-page-box {
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 24px;
+    }
+    .contact-us-form small {
+        padding: 0;
+    }
+}
+@media (max-width: 767px){
+    .shopping-center {
+        flex-direction: column;
+    }
+    .shopping-center-title {
+        max-width: 100%;
+    }
+    .shopping-center-box {
+        max-width: 100%;
+    }
+    .shopping-center-box p {
+        margin-top: 48px;
+    }
+    .shopping-center-box strong {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .shopping-center-box span {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .shopping-center-box:nth-child(6){
+        order: 5;
+    }
+    .shopping-center-photo {
+        max-width: 100%;
+        order: 6;
+    }
+    .advantages-cnt{
+        display: none;
+    }
+    .advantages-rel{
+        display: block;
+    }
+    .advantages-box {
+        border-radius: 20px;
+        padding: 28px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 575px){
+    .tenants-cnt {
+        padding-top: 60px;
+    }
+    .rental-advertising-cnt img {
+        max-width: 40px;
+    }
+    .rental-advertising-text p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .rental-advertising-text span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .rental-advertising-cnt {
+        gap: 12px;
+    }
+    .contact-us-main {
+        padding: 0;
+    }
+    .contact-us-cnt {
+        padding: 0;
+    }
+    .contact-us-box{
+        padding: 40px 20px;
+    }
+    .contact-inp-fl{
+        flex-direction: column;
+        gap: 0;
+    }
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.icons{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.icon-search{
+    content: url("../img/icons/search.svg");
+}
+.icon-location{
+    content: url("../img/icons/location.svg");
+}
+
+.icon-clack{
+    content: url("../img/icons/clock.svg");
+}
+.icon-call{
+    content: url("../img/icons/call.svg");
+}
+
+.icon-loc{
+    content: url("../img/icons/loc.svg");
+
+}
+.icon-clack-white{
+    content: url("../img/icons/clack-white.svg");
+}
+.icon-phone{
+    content: url("../img/icons/phone.svg");
+}
+.icon-arrow-right{
+    content: url("../img/icons/arrow-right.svg");
+}
+
+.arrow-top{
+    content: url("../img/icons/arrow-top.svg");
+}
+.icon-map{
+    content: url("../img/icons/map.svg");
+}
+
+.icon-close{
+    content: url("../img/icons/close.svg");
+}
+.icon-filter{
+    content: url("../img/icons/filter.svg");
+}
+.icon-filt{
+    content: url("../img/icons/filt.svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.icon {
+    display               : inline-block;
+    height                : 1em;
+    width                 : 1em;
+    mask-size             : contain;
+    -webkit-mask-size     : contain;
+    mask-repeat           : no-repeat;
+    -webkit-mask-repeat   : no-repeat;
+    mask-position         : center;
+    -webkit-mask-position : center;
+    font-size             : 16px;
+    background-color      : #1C1C1C;
+}
+
+
+.icon.icon-list{
+    mask-image         : url("../img/icons/list.svg");
+    -webkit-mask-image : url("../img/icons/list.svg");
+}
+
+.icon.icon-maps{
+    mask-image         : url("../img/icons/maps.svg");
+    -webkit-mask-image : url("../img/icons/maps.svg");
+}
+
+
+.icon.icon-vk{
+    mask-image         : url("../img/icons/vk.svg");
+    -webkit-mask-image : url("../img/icons/vk.svg");
+}
+
+.icon.icon-telegram{
+    mask-image         : url("../img/icons/telegram.svg");
+    -webkit-mask-image : url("../img/icons/telegram.svg");
+}
