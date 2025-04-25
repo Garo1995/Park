@@ -1,0 +1,234 @@
+.floor-shops-ram{
+    position: relative;
+}
+
+.floor-href-box{
+    gap: 12px;
+}
+.floor-href-box span{
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+.floor-href-box ul{
+    gap: 4px;
+}
+.floor-click{
+    background: #FFFFFF;
+    border: 2px solid #0000000D;
+    width: 48px;
+    height: 48px;
+    gap: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.floor-href-act{
+    border: 2px solid #F15921;
+    color: #F15921;
+
+}
+.open-floor-gloria{
+    cursor: pointer;
+}
+.floor-labora{
+    cursor: pointer;
+}
+
+.floor-shops-ram  path{
+    transition: 0.3s;
+}
+
+.floor-shops-ram  rect{
+    transition: 0.3s;
+}
+
+
+.floor-labora rect{
+    fill: #fff;
+    transition: 0.3s;
+    fill-opacity: 0.5;
+}
+.floor-labora path{
+    fill-opacity: 0.5;
+}
+
+.floor-labora:hover rect{
+    fill: rgb(241, 89, 33);
+
+}
+.floor-clothes-active rect{
+    fill: rgb(241, 89, 33);
+
+}
+.floor-clothes-active path{
+    fill: rgb(241, 89, 33);
+
+}
+.open-floor-gloria path{
+    fill: #F2F2F2;
+    transition: 0.3s;
+
+}
+.open-floor-gloria:hover path{
+    fill: rgb(241, 89, 33);
+}
+.floor-labora-active rect{
+    fill: rgb(241, 89, 33);
+}
+.open-floor-gloria-active path{
+    fill: rgb(241, 89, 33);
+}
+.floor-four{
+    cursor: pointer;
+}
+.floor-four:hover path{
+    fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+}
+.floor-four-active path{
+    fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+}
+.floor-four:hover rect{
+    fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+}
+.floor-four-active rect{
+    fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+}
+
+.floor-gloria-style{
+    background: #1C1C1C;
+    width: 220px;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    right: 60px;
+    top: 290px;
+    z-index: 1;
+    display: none;
+}
+.floor-gloria-info img{
+    width: 100px;
+}
+.floor-gloria-info h4{
+    color: #FFFFFF;
+    margin-top: 12px;
+    text-align: center;
+}
+.floor-gloria-info p{
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    opacity: 0.60;
+    color: #FFFFFF;
+}
+
+.more-info-floor{
+    transition: 0.3s;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.more-info-floor:hover{
+    border-bottom: 1px solid transparent;
+
+}
+
+.floor-gloria-close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-x.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.floor-gloria-mod-active{
+    display: block;
+}
+.floor-labora-mod{
+    top: 130px;
+    right: 250px;
+}
+.floor-labora-mod-active{
+    display: block;
+}
+
+.floor-href-box-mob{
+    display: none;
+}
+
+@media (max-width: 1199px){
+    .floor-gloria-style {
+        right: 50px;
+        top: 240px;
+    }
+    .floor-labora-mod {
+        top: 100px;
+        right: 158px;
+    }
+}
+@media (max-width: 1020px){
+    .floor-labora-mod {
+        top: 149px;
+        right: 294px;
+    }
+    .shops-page-cnt .floor-href-box{
+        display: none;
+    }
+    .floor-href-box-mob{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+    .floor-href-box{
+        background: #FFFFFF;
+        border-radius: 100px;
+        padding: 12px;
+    }
+    .floor-labora-mod {
+        top: 124px;
+        right: 209px;
+    }
+}
+@media (max-width: 767px){
+    .floor-gloria-style {
+        position: fixed;
+        bottom: 12px;
+        left: 12px;
+        width: calc(100% - 24px);
+        right: auto;
+        top: auto;
+        height: 290px;
+    }
+    .floor-gloria-info p {
+        max-width: 180px;
+        font-size: 16px;
+    }
+    .floor-href-box {
+        max-width: 400px;
+        width: 100%;
+        justify-content: center;
+    }
+}
