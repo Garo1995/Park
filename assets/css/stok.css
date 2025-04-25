@@ -5,6 +5,13 @@
     height: 420px;
     width: calc(33.333333% - 14px);
 }
+.shops-show-wrap .promotions-photo{
+    border-radius: 20px;
+
+}
+.shops-show-wrap .promotions-photo img{
+    border-radius: 22px;
+}
 
 .shops-show-wrap .promotions-title {
     border-radius: 17px;
@@ -48,7 +55,6 @@
 .sort-stock-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 16px;
     margin-top: 20px;

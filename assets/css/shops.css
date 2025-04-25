@@ -28,6 +28,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    transition: 0.3s;
+}
+.breadcrumb ul li a:hover{
+    color: #F15921;
 }
 .the-rest-page h1{
     text-align: left;
@@ -256,8 +260,12 @@
 .shops-show-photo img{
     max-width: 140px;
     width: 100%;
-}
+    transition: 0.3s;
 
+}
+.shops-show-box:hover .shops-show-photo img{
+    transform: scale(1.1);
+}
 .shops-show-info{
     margin-top: 17px;
     width: 100%;
@@ -278,6 +286,12 @@
     line-height: 20px;
     text-align: left;
     white-space: nowrap;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+
+}
+.shops-show-name a:hover{
+    border-bottom: 1px solid #F15921;
 }
 .shops-show-floor{
     background: #F7F7F7;
@@ -324,6 +338,9 @@
 }
 .close-shops-show{
     display: none;
+}
+.body-fix{
+    overflow: hidden;
 }
 @media (max-width: 1199px){
     .shops-show-box {
@@ -410,6 +427,7 @@
         height: 380px;
         overflow-x: scroll;
         padding-right: 10px;
+        padding-bottom: 115px;
     }
     .shops-show-href{
         background: #F7F7F7;
@@ -495,8 +513,7 @@
         display: block;
     }
     .filter-mobile-flex{
-        justify-content: center;
-        gap: 20px;
+        gap: 24px;
         margin-top: 20px;
     }
     .filter-mobile-flex .check-floor{
@@ -526,6 +543,10 @@
         max-width: 320px;
         width: 100%;
     }
+    .shops-show-cnt-fix .btn:hover{
+        background: #FFFFFF;
+        color: #1C1C1C;
+    }
     .shops-show-flex {
         margin-top: 32px;
     }
@@ -543,6 +564,9 @@
         width: 100%;
         justify-content: center;
         margin-top: 32px;
+    }
+    .shops-show-btn-none{
+        display: none;
     }
     .shops-show-box{
         width: 100%;

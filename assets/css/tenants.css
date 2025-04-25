@@ -71,7 +71,6 @@
     line-height: 56px;
     font-family: 'Montserrat';
 
-
 }
 .shopping-center-box span{
     color: #1C1C1C;
@@ -189,6 +188,10 @@
     max-width: 690px;
     width: 100%;
 }
+.contact-us-photo img{
+    width: 100%;
+}
+
 .contact-us-box{
     max-width: 510px;
     width: 100%;
@@ -222,8 +225,9 @@
     line-height: 22px;
     border: unset;
     font-family: 'Montserrat';
-
-
+    border: 1px solid transparent;
+    resize: none;
+    transition: 0.3s;
 }
 .contact-inp input::placeholder{
     color: #4A4A4A;
@@ -238,6 +242,12 @@
 
 }
 
+.contact-inp input:hover, .contact-inp textarea:hover{
+    border: 1px solid #F15921;
+}
+.contact-inp input:active, .contact-inp textarea:active{
+    border: 1px solid #F15921;
+}
 .contact-inp textarea{
     border-radius: 24px;
     height: 120px;
@@ -509,10 +519,10 @@
         padding: 0;
     }
     .contact-us-cnt {
-        padding: 0;
+        padding: 0 5px;
     }
-    .contact-us-box{
-        padding: 40px 20px;
+    .contact-us-box {
+        padding: 40px 16px;
     }
     .contact-inp-fl{
         flex-direction: column;

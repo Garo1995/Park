@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.open-menu').on('click', function () {
+    $('.open-menu').on('click', function (e) {
+        e.stopPropagation();
         $(this).toggleClass('close-menu');
         if ($(this).hasClass('close-menu')) {
             $('.menu-content').addClass('transition-menu');
@@ -16,6 +17,12 @@ $(document).ready(function () {
         $('.menu-content').removeClass('transition-menu');
         $('.open-menu').removeClass('close-menu');
     })
+    $(window).on('click', function (e) {
+        $('.menu-content').addClass('menu-width');
+        $('body').removeClass('body_fix');
+        $('.menu-content').removeClass('transition-menu');
+        $('.open-menu').removeClass('close-menu');
+    });
 });
 
 
@@ -30,6 +37,20 @@ $('.close-search').on('click', function () {
 
 
 
+$('.menu-scroll ').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+        let $target = $(this.hash);
+        $target = $target.length && $target
+            || $('[name=' + this.hash.slice(1) +']');
+        if ($target.length) {
+            let targetOffset = $target.offset().top-130;
+            $('html,body')
+                .animate({scrollTop: targetOffset}, 1000);
+            return false;
+        }
+    }
+});
 
 
 
@@ -133,24 +154,35 @@ $('.shops-show-href').on('click', function () {
 
 $('.select-categories').on('click', function () {
      $('.shops-show-left').addClass('shops-show-left-active');
+     $('body').addClass('body-fix');
+    $('.filter-mobile').removeClass('filter-mobile-active');
+
 });
 
 
 $('.close-shops-show').on('click', function () {
      $('.shops-show-left').removeClass('shops-show-left-active');
+    $('body').removeClass('body-fix');
+
 });
 
 
 $('.open-filter-mobile').on('click', function () {
      $('.filter-mobile').addClass('filter-mobile-active');
+    $('body').addClass('body-fix');
+    $('.shops-show-left').removeClass('shops-show-left-active');
+
 });
 
 $('.close-filter').on('click', function () {
      $('.filter-mobile').removeClass('filter-mobile-active');
+    $('body').removeClass('body-fix');
+
 });
 
 
 $('.shops-show-btn').on('click', function () {
+     $(this).toggleClass('shops-show-btn-none');
      $('.shops-show-wrap').toggleClass('shops-show-wrap-open');
 });
 
