@@ -252,7 +252,7 @@ $('.floor-four').on('click', function (){
 
 
 $('.choose-clothes').on('click', function (){
-    $('.floor-labora').toggleClass('floor-labora-active');
+    $('.floor-labora').toggleClass('floor-clothes-active');
 })
 
 

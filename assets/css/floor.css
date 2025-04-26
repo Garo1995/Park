@@ -65,11 +65,9 @@
     fill-opacity: 0.5;
     stroke: rgb(241, 89, 33);
 }
-.floor-labora-active rect, .floor-labora-active path{
-    fill: rgb(241, 89, 33);
-    stroke: rgb(241, 89, 33);
-    fill-opacity: 0.5;
-}
+
+
+
 
 
 
@@ -81,15 +79,28 @@
 }
 .open-floor-gloria:hover path{
     fill: #F2F2F2;
-
     stroke: rgb(241, 89, 33);
 
 }
-.open-floor-gloria-active path{
+
+.floor-clothes-active rect, .floor-clothes-active path{
+    fill: #FFFFFF;
+    fill-opacity: 0.5;
+    stroke: rgb(241, 89, 33);
+}
+.floor-labora-active rect, .floor-labora-active path{
+    fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+    fill-opacity: 0.5;
+}
+.open-floor-gloria-active path, .open-floor-gloria-active rect{
     fill: rgb(241, 89, 33);
     stroke: rgb(241, 89, 33);
 
 }
+
+
+
 .floor-four{
     cursor: pointer;
 }
@@ -102,6 +113,7 @@
 .floor-four-active rect, .floor-four-active path{
     fill: rgb(241, 89, 33);
     stroke: rgb(241, 89, 33);
+    fill-opacity: 0.5;
 
 }
 
