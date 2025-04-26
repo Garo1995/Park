@@ -61,61 +61,48 @@
 
 }
 .floor-labora:hover rect, .floor-labora:hover path{
-    fill: rgb(241, 89, 33);
+    fill: #FFFFFF;
     fill-opacity: 0.5;
     stroke: rgb(241, 89, 33);
 }
-.floor-labora-active path, .floor-labora-active path{
+.floor-labora-active rect, .floor-labora-active path{
     fill: rgb(241, 89, 33);
     stroke: rgb(241, 89, 33);
     fill-opacity: 0.5;
 }
 
 
-
-.floor-clothes-active rect{
-    fill: rgb(241, 89, 33);
-    fill-opacity: 0.5;
-    stroke: rgb(241, 89, 33);
-
-}
-.floor-clothes-active path{
-    fill: rgb(241, 89, 33);
-    stroke: rgb(241, 89, 33);
-    fill-opacity: 0.5;
-
-}
 
 .open-floor-gloria path{
     fill: #F2F2F2;
     transition: 0.3s;
+    stroke: #F2F2F2;
 
 }
 .open-floor-gloria:hover path{
-    fill: rgb(241, 89, 33);
-}
+    fill: #F2F2F2;
 
+    stroke: rgb(241, 89, 33);
+
+}
 .open-floor-gloria-active path{
     fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+
 }
 .floor-four{
     cursor: pointer;
 }
-.floor-four:hover path{
-    fill: rgb(241, 89, 33);
+
+.floor-four:hover path, .floor-four:hover rect{
+    fill: #FFFFFF;
     stroke: rgb(241, 89, 33);
 }
-.floor-four-active path{
+
+.floor-four-active rect, .floor-four-active path{
     fill: rgb(241, 89, 33);
     stroke: rgb(241, 89, 33);
-}
-.floor-four:hover rect{
-    fill: rgb(241, 89, 33);
-    stroke: rgb(241, 89, 33);
-}
-.floor-four-active rect{
-    fill: rgb(241, 89, 33);
-    stroke: rgb(241, 89, 33);
+
 }
 
 .floor-gloria-style{
