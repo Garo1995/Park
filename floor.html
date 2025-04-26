@@ -287,7 +287,7 @@
                     <div class="floor-shops-min">
                         <div class="floor-shops-js" data-catalog="floor-zero">
                             <div class="floor-shops-ram G-flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 1097" fill="none">
+                                <svg class="zoom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 1097" fill="none">
                                     <g clip-path="url(#clip0_2220_2289)">
                                         <rect width="895" height="1097" rx="8" fill="white"/>
 
@@ -434,7 +434,8 @@
                         </div>
                         <div class="floor-shops-js" data-catalog="floor-one">
                             <div class="floor-shops-ram G-flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
+                                <svg class="zoom " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
+
                                     <g clip-path="url(#clip0_2135_4843)">
                                         <rect width="895" height="935" rx="8" fill="white"/>
                                         <rect x="2" y="2" width="891" height="931" rx="6" stroke="#4A4A4A"
@@ -516,7 +517,7 @@
                                             <rect x="402" y="64" width="53" height="79" rx="4" fill="black"
                                                   fill-opacity="0.05"/>
                                         </g>
-                                        <g class="floor-labora">
+                                        <g class="floor-labora" >
                                             <rect x="457.5" y="64.5" width="111" height="78" rx="3.5" fill="#F15921"
                                                   fill-opacity="0.2" stroke="#F15921"/>
 
@@ -919,7 +920,7 @@
                         </div>
                         <div class="floor-shops-js" data-catalog="floor-two">
                             <div class="floor-shops-ram G-flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
+                                <svg class="zoom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
                                     <g clip-path="url(#clip0_2135_8024)">
                                         <rect width="895" height="935" rx="8" fill="white"/>
                                         <rect x="2" y="2" width="891" height="931" rx="6" stroke="#4A4A4A"
@@ -1082,7 +1083,7 @@
                         </div>
                         <div class="floor-shops-js" data-catalog="floor-three">
                             <div class="floor-shops-ram G-flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
+                                <svg class="zoom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
                                     <g clip-path="url(#clip0_2135_8585)">
                                         <rect width="895" height="935" rx="8" fill="white"/>
                                         <g class="floor-four">
@@ -1253,7 +1254,7 @@
                         </div>
                         <div class="floor-shops-js" data-catalog="floor-four">
                             <div class="floor-shops-ram G-flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
+                                <svg class="zoom"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 935" fill="none">
                                     <g clip-path="url(#clip0_2135_8916)">
                                         <rect width="895" height="935" rx="8" fill="white"/>
                                         <rect x="2" y="2" width="891" height="931" rx="6" stroke="#4A4A4A"
@@ -1384,5 +1385,88 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery.fancybox.js"></script>
 <script src="assets/js/script.js"></script>
+
+
+
+
+
+<script>
+
+    const svgs = document.querySelectorAll('.zoom');
+
+    // Функция для проверки мобильного устройства
+    function isMobile() {
+        return window.innerWidth <= 575;
+    }
+
+    // Для каждого SVG
+    svgs.forEach(svg => {
+        let isDragging = false;
+        let startX, startY;
+        let translateX = 0, translateY = 0;
+        let scale = 1;
+        let isZoomed = false;
+        let lastTapTime = 0;
+
+        // Двойной клик (тап) для включения зума
+        svg.addEventListener('click', (e) => {
+            if (!isMobile()) return;
+            const now = Date.now();
+            if (now - lastTapTime < 300) {
+                toggleZoom();
+            }
+            lastTapTime = now;
+        });
+
+        // Начало перетаскивания
+        svg.addEventListener('touchstart', (e) => {
+            if (!isMobile() || !isZoomed) return;
+            isDragging = true;
+            startX = e.touches[0].clientX - translateX;
+            startY = e.touches[0].clientY - translateY;
+        });
+
+        // Перемещение
+        svg.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            translateX = e.touches[0].clientX - startX;
+            translateY = e.touches[0].clientY - startY;
+            updateTransform();
+        });
+
+        // Завершение перетаскивания
+        svg.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        // Переключатель ЗУМа
+        function toggleZoom() {
+            if (!isZoomed) {
+                scale = 1.6;
+                isZoomed = true;
+                svg.style.cursor = 'grab';
+            } else {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                isZoomed = false;
+                svg.style.cursor = 'pointer';
+            }
+            updateTransform();
+        }
+
+        // Обновление трансформации
+        function updateTransform() {
+            svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        }
+    });
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

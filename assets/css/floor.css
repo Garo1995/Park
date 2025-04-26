@@ -93,6 +93,11 @@
     stroke: rgb(241, 89, 33);
     fill-opacity: 0.5;
 }
+.floor-labora-active:hover rect, .floor-labora-active:hover path{
+    fill: rgb(241, 89, 33);
+    stroke: rgb(241, 89, 33);
+    fill-opacity: 0.5;
+}
 .open-floor-gloria-active path, .open-floor-gloria-active rect{
     fill: rgb(241, 89, 33);
     stroke: rgb(241, 89, 33);
@@ -188,6 +193,26 @@
     display: none;
 }
 
+
+
+.floor-shops-ram {
+    overflow: hidden;
+    position: relative;
+}
+
+.floor-shops-ram svg {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    transition: transform 0.1s linear;
+    touch-action: none;
+    user-select: none;
+}
+
+
+
+
+
 @media (max-width: 1199px){
     .floor-gloria-style {
         right: 50px;
@@ -240,4 +265,6 @@
         width: 100%;
         justify-content: center;
     }
+
 }
+
