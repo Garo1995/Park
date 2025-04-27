@@ -210,7 +210,22 @@
 }
 
 
-
+.tooltip {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    background: #1C1C1C;
+    border: 1px solid #0000000D;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 
 @media (max-width: 1199px){
@@ -265,6 +280,10 @@
         width: 100%;
         justify-content: center;
     }
-
+    .tooltip {
+        padding: 10px 16px;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
