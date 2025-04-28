@@ -233,12 +233,6 @@ $('.open-floor-gloria').on('click', function (){
 
 
 
-$('.floor-gloria-close').on('click', function (){
-    $('.floor-gloria-mod').removeClass('floor-gloria-mod-active');
-    $('.floor-labora-mod').removeClass('floor-labora-mod-active');
-    $('.open-floor-gloria').removeClass('open-floor-gloria-active');
-    $('.floor-labora').removeClass('floor-labora-active');
-})
 
 $('.floor-labora').on('click', function (){
     $(this).toggleClass('floor-labora-active');
@@ -246,18 +240,16 @@ $('.floor-labora').on('click', function (){
 })
 
 
-$('.floor-four').on('click', function (){
-    $(this).toggleClass('floor-four-active');
-
-    $('.floor-labora-mod').toggleClass('floor-labora-mod-active');
-
-})
-
-
 $('.choose-clothes').on('click', function (){
-    $('.floor-labora').toggleClass('floor-clothes-active');
+    $('.women-clothing').toggleClass('floor-clothes-active');
 })
 
+$('.floor-gloria-close').on('click', function (){
+    $('.floor-gloria-mod').removeClass('floor-gloria-mod-active');
+    $('.floor-labora-mod').removeClass('floor-labora-mod-active');
+    $('.open-floor-gloria').removeClass('open-floor-gloria-active');
+    $('.floor-labora').removeClass('floor-labora-active');
+})
 
 
 

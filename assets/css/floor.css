@@ -288,6 +288,14 @@
         width: 100%;
         justify-content: center;
     }
-
+    .floor-four:hover path, .floor-four:hover rect {
+        fill: none;
+        stroke: none;
+    }
+    .floor-four-active rect, .floor-four-active path {
+        fill: rgb(241, 89, 33);
+        stroke: rgb(241, 89, 33);
+        fill-opacity: 0.5;
+    }
 }
 
