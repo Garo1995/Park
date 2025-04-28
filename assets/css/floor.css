@@ -262,6 +262,13 @@
     }
 
 }
+@media (max-width: 768px){
+
+    .tooltip {
+        display: none;
+
+    }
+}
 @media (max-width: 767px){
     .floor-gloria-style {
         position: fixed;
@@ -282,11 +289,5 @@
         justify-content: center;
     }
 
-    .tooltip {
-        padding: 7px 11px;
-        font-size: 13px;
-        line-height: 18px;
-        border-radius: 5px;
-    }
 }
 
