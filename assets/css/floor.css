@@ -260,6 +260,9 @@
         top: 124px;
         right: 209px;
     }
+    .tooltip{
+        display: none;
+    }
 }
 @media (max-width: 767px){
     .floor-gloria-style {
