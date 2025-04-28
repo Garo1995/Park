@@ -248,6 +248,7 @@ $('.floor-labora').on('click', function (){
 
 $('.floor-four').on('click', function (){
     $(this).toggleClass('floor-four-active');
+
     $('.floor-labora-mod').toggleClass('floor-labora-mod-active');
 
 })
