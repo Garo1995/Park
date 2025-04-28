@@ -237,6 +237,7 @@
 .shops-show-right{
     max-width: 895px;
     width: 100%;
+    position: relative;
 }
 .shops-show-wrap{
     gap: 20px;
