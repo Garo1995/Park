@@ -1399,22 +1399,53 @@
 
 <script>
     const tooltip = document.getElementById('tooltip');
-    const stores = document.querySelectorAll('.hover-store'); // Все элементы с классом store
+    const stores = document.querySelectorAll('.hover-store');
+
     stores.forEach(store => {
         store.addEventListener('mouseenter', (e) => {
-            const nameBrand = e.target.getAttribute('data-brend');
-            tooltip.textContent = nameBrand;
-            tooltip.style.opacity = 1;
+            if (window.innerWidth > 768) {
+                const targetStore = e.target.closest('.hover-store');
+                if (targetStore) {
+                    const name = targetStore.getAttribute('data-brend');
+                    tooltip.textContent = name;
+                    tooltip.style.opacity = 1;
+                }
+            }
         });
 
         store.addEventListener('mousemove', (e) => {
-            tooltip.style.left = `${e.clientX + 20}px`;
-            tooltip.style.top = `${e.clientY + 20}px`;
+            if (window.innerWidth > 768) {
+                tooltip.style.left = `${e.clientX + 20}px`;
+                tooltip.style.top = `${e.clientY + 20}px`;
+            }
         });
 
         store.addEventListener('mouseleave', () => {
-            tooltip.style.opacity = 0;
+            if (window.innerWidth > 768) {
+                tooltip.style.opacity = 0;
+            }
         });
+
+        store.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.stopPropagation();
+                const targetStore = e.target.closest('.hover-store');
+                if (targetStore) {
+                    const name = targetStore.getAttribute('data-brend');
+                    tooltip.textContent = name;
+                    tooltip.style.opacity = 1;
+                    tooltip.style.left = `${e.clientX - 30}px`; // Координаты пальца
+                    tooltip.style.top = `${e.clientY + 20}px`;   // Координаты пальца
+                    tooltip.style.transform = 'translateX(0)'; // Убираем
+                }
+            }
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768 && !e.target.closest('.hover-store')) {
+            tooltip.style.opacity = 0;
+        }
     });
 </script>
 
