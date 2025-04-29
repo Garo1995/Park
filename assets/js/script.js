@@ -149,6 +149,8 @@ $('.floor-name').on('click', function () {
 
 $('.shops-show-href').on('click', function () {
      $(this).toggleClass('shops-show-active');
+    $('.shops-show-left').removeClass('shops-show-left-active');
+    $('body').removeClass('body-fix');
 });
 
 
@@ -236,7 +238,13 @@ $('.open-floor-gloria').on('click', function (){
 
 $('.floor-labora').on('click', function (){
     $(this).toggleClass('floor-labora-active');
-    $('.floor-labora-mod').toggleClass('floor-labora-mod-active');
+    $('.floor-labora-mod').addClass('floor-labora-mod-active');
+})
+
+
+$('.floor-click').on('click', function (){
+    $('.floor-labora').removeClass('floor-labora-active')
+    $('.floor-labora-mod').removeClass('floor-labora-mod-active');
 })
 
 

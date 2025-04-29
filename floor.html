@@ -1493,6 +1493,8 @@
         let isZoomed = false;
         let lastTapTime = 0;
 
+        const container = svg.parentElement;
+
         // Двойной клик (тап) для включения зума
         svg.addEventListener('click', (e) => {
             if (!isMobile()) return;
@@ -1514,8 +1516,21 @@
         // Перемещение
         svg.addEventListener('touchmove', (e) => {
             if (!isDragging) return;
-            translateX = e.touches[0].clientX - startX;
-            translateY = e.touches[0].clientY - startY;
+
+            const moveX = e.touches[0].clientX - startX;
+            const moveY = e.touches[0].clientY - startY;
+
+            // Получаем размеры контейнера и SVG
+            const containerRect = container.getBoundingClientRect();
+            const svgRect = svg.getBoundingClientRect();
+
+            const maxTranslateX = (svgRect.width * scale - containerRect.width) / 2;
+            const maxTranslateY = (svgRect.height * scale - containerRect.height) / 2;
+
+            // Ограничения (не выходить за границы)
+            translateX = Math.min(Math.max(moveX, -maxTranslateX), maxTranslateX);
+            translateY = Math.min(Math.max(moveY, -maxTranslateY), maxTranslateY);
+
             updateTransform();
         });
 
@@ -1527,7 +1542,7 @@
         // Переключатель ЗУМа
         function toggleZoom() {
             if (!isZoomed) {
-                scale = 1.6;
+                scale = 1.5;
                 isZoomed = true;
                 svg.style.cursor = 'grab';
             } else {
@@ -1543,6 +1558,7 @@
         // Обновление трансформации
         function updateTransform() {
             svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            svg.style.transformOrigin = 'center center';
         }
     });
 </script>

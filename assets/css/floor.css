@@ -129,8 +129,9 @@
     border-radius: 20px;
     padding: 20px;
     position: absolute;
-    right: 60px;
-    top: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     display: none;
 }
@@ -181,10 +182,7 @@
 .floor-gloria-mod-active{
     display: block;
 }
-.floor-labora-mod{
-    top: 130px;
-    right: 250px;
-}
+
 .floor-labora-mod-active{
     display: block;
 }
@@ -229,20 +227,11 @@
 
 
 @media (max-width: 1199px){
-    .floor-gloria-style {
-        right: 50px;
-        top: 240px;
-    }
-    .floor-labora-mod {
-        top: 100px;
-        right: 158px;
-    }
+
+
 }
 @media (max-width: 1020px){
-    .floor-labora-mod {
-        top: 149px;
-        right: 294px;
-    }
+
     .shops-page-cnt .floor-href-box{
         display: none;
     }
@@ -255,10 +244,6 @@
         background: #FFFFFF;
         border-radius: 100px;
         padding: 12px;
-    }
-    .floor-labora-mod {
-        top: 124px;
-        right: 209px;
     }
 
 }
@@ -278,6 +263,7 @@
         right: auto;
         top: auto;
         height: 290px;
+        transform: unset;
     }
     .floor-gloria-info p {
         max-width: 180px;
